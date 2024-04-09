@@ -1,5 +1,6 @@
 [package]
 name = "credible"
+description = "Fast and flexible credential generation."
 version = "0.1.0"
 edition = "2021"
 
