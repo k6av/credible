@@ -1,6 +1,6 @@
 #![feature(ascii_char)]
 
-use clap::{arg, command, value_parser, Arg, Command};
+use clap::{command, value_parser, Arg, Command};
 
 mod generate;
 mod format;

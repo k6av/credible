@@ -1,5 +1,3 @@
-use rand::Rng;
-
 // These charsets MUST be ASCII, because we use byte indexing
 const USERNAME_CHARSET: &str = "qwertyuiopasdfghjklzxcvbnm1234567890";
 const PASSWORD_CHARSET: &str = "qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOPASDFGHJKLZXVBNM~`!@#$%^&*()-_+=[]{}|;:'<,>./?";
