@@ -3,6 +3,7 @@ name = "credible"
 description = "Fast and flexible credential generation."
 version = "0.1.0"
 edition = "2021"
+repository = "https://github.com/k6av/credible"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -10,3 +11,7 @@ edition = "2021"
 clap = { version = "4.5.4", features = ["cargo"] }
 owo-colors = "4.0.0"
 rand = "0.8.5"
+
+[profile.release]
+strip = true
+lto = true
