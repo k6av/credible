@@ -19,6 +19,12 @@ fn main() {
                     .value_parser(value_parser!(usize))
                     .default_value("24"),
             ]),
+            Command::new("pass").about("Generate single password")
+            .args([
+                Arg::new("password length").short('p')
+                    .value_parser(value_parser!(usize))
+                    .default_value("24"),
+            ]),
         ]).get_matches();
 
     let rng = rand::thread_rng();
@@ -29,6 +35,11 @@ fn main() {
                 *sub.get_one::<usize>("username length").unwrap(),
                 *sub.get_one::<usize>("password length").unwrap(),
             ))))
+        },
+        Some(("pass", sub)) => {
+            print!("{}", format::pass(generate::pass(rng,
+                *sub.get_one::<usize>("password length").unwrap(),
+            )))
         },
         _ => unreachable!(),
     }
