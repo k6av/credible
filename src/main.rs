@@ -10,7 +10,7 @@ fn main() {
         .propagate_version(true)
         .subcommand_required(true)
         .subcommands([
-            Command::new("userpass").about("Generate username-password pair")
+            Command::new("pair").about("Generate username-password pair")
             .args([
                 Arg::new("username length").short('u')
                     .value_parser(value_parser!(usize))
