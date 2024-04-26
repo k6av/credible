@@ -1,4 +1,5 @@
-name: Rust
+---
+name: "unittest"
 
 on:
   push:
@@ -10,7 +11,8 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  test:
+  unittest:
+    name: "Unit testing"
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
