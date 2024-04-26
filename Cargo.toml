@@ -4,6 +4,7 @@ description = "Fast and flexible credential generation."
 version = "0.1.0"
 edition = "2021"
 repository = "https://github.com/k6av/credible"
+license = "GPL-3.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
