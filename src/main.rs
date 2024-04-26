@@ -24,8 +24,8 @@ fn main() {
     let rng = rand::thread_rng();
     
     match matches.subcommand() {
-        Some(("userpass", sub)) => {
-            print!("{}", format::userpass(generate::userpass(rng, (
+        Some(("pair", sub)) => {
+            print!("{}", format::pair(generate::pair(rng, (
                 *sub.get_one::<usize>("username length").unwrap(),
                 *sub.get_one::<usize>("password length").unwrap(),
             ))))

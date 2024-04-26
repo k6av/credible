@@ -1,2 +1,2 @@
-mod userpass;
-pub use userpass::generate as userpass;
+mod pair;
+pub use pair::generate as pair;

@@ -1,2 +1,2 @@
-mod userpass;
-pub use userpass::format as userpass;
+mod pair;
+pub use pair::format as pair;
